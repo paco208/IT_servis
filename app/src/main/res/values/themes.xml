@@ -1,8 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.IT_servis_rezervacija" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Osnovna tema aplikacije; naslovna vrstica je MaterialToolbar v postavitvi. -->
+    <style name="Base.Theme.IT_servis_rezervacija" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorPrimaryVariant">@color/navy_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/ozadje</item>
     </style>
 
     <style name="Theme.IT_servis_rezervacija" parent="Base.Theme.IT_servis_rezervacija" />

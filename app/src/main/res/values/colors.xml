@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="navy">#1F3A64</color>
+    <color name="navy_dark">#162B4D</color>
+    <color name="blue">#2F5FB3</color>
+    <color name="ozadje">#F3F5F9</color>
+    <color name="ozadje_ikone">#E3EAF6</color>
+    <color name="ozadje_opombe">#E6ECF6</color>
+    <color name="obroba">#D5DBE5</color>
+    <color name="besedilo">#1B2433</color>
+    <color name="besedilo_sivo">#6B7385</color>
 </resources>
