@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Moj IT servis</string>
+
+    <!-- MainActivity: izbira naprave -->
+    <string name="izberite_napravo">Izberite napravo</string>
+    <string name="izberite_napravo_podnaslov">Za katero napravo potrebujete servis?</string>
+    <string name="naprava_racunalnik">Računalnik</string>
+    <string name="naprava_telefon">Telefon</string>
+    <string name="naprava_tiskalnik">Tiskalnik</string>
+    <string name="opis_racunalnik">Diagnostika, popravilo ali nadgradnja</string>
+    <string name="opis_telefon">Pregled in odprava napak</string>
+    <string name="opis_tiskalnik">Pomoč pri tiskanju in vzdrževanju</string>
+    <string name="opis_slike_racunalnik">Računalnik – odpri obrazec za rezervacijo</string>
+    <string name="opis_slike_telefon">Telefon – odpri obrazec za rezervacijo</string>
+    <string name="opis_slike_tiskalnik">Tiskalnik – odpri obrazec za rezervacijo</string>
+    <string name="kako_poteka">Kako poteka rezervacija?</string>
+    <string name="kako_poteka_opis">Izberite napravo, izpolnite obrazec in potrdite zahtevek.</string>
 </resources>
