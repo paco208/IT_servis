@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ozadje izbirnika Spinner: enako kot pri poljih, desno pa puščica navzdol. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_polje" />
+    <item
+        android:width="24dp"
+        android:height="24dp"
+        android:drawable="@drawable/ic_puscica_dol"
+        android:end="12dp"
+        android:gravity="end|center_vertical" />
+</layer-list>

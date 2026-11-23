@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ozadje"
+    android:orientation="vertical"
+    tools:context=".RezervacijaActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navy"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:titleTextColor="@color/white" />
+
+    <!-- Pomični obrazec -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Razdelek: kontaktni podatki -->
+            <TextView
+                style="@style/NaslovRazdelka"
+                android:text="@string/razdelek_kontakt" />
+
+            <TextView
+                style="@style/PodnaslovRazdelka"
+                android:text="@string/razdelek_kontakt_opis" />
+
+            <TextView
+                style="@style/Oznaka"
+                android:labelFor="@+id/vnos_ime"
+                android:text="@string/oznaka_ime" />
+
+            <EditText
+                android:id="@+id/vnos_ime"
+                style="@style/Polje"
+                android:autofillHints="name"
+                android:hint="@string/hint_ime"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords" />
+
+            <TextView
+                style="@style/Oznaka"
+                android:labelFor="@+id/vnos_eposta"
+                android:text="@string/oznaka_eposta" />
+
+            <EditText
+                android:id="@+id/vnos_eposta"
+                style="@style/Polje"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hint_eposta"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/Oznaka"
+                android:labelFor="@+id/vnos_telefon"
+                android:text="@string/oznaka_telefon" />
+
+            <EditText
+                android:id="@+id/vnos_telefon"
+                style="@style/Polje"
+                android:autofillHints="phone"
+                android:hint="@string/hint_telefon"
+                android:imeOptions="actionNext"
+                android:inputType="phone" />
+
+            <TextView
+                style="@style/Oznaka"
+                android:text="@string/oznaka_poseg" />
+
+            <Spinner
+                android:id="@+id/izbirnik_poseg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_spinner"
+                android:paddingEnd="40dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/Oznaka"
+                android:labelFor="@+id/vnos_opis"
+                android:text="@string/oznaka_opis" />
+
+            <EditText
+                android:id="@+id/vnos_opis"
+                style="@style/Polje"
+                android:gravity="top|start"
+                android:hint="@string/hint_opis"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:minLines="4" />
+
+            <!-- Razdelek: termin obiska -->
+            <TextView
+                style="@style/NaslovRazdelka"
+                android:layout_marginTop="28dp"
+                android:text="@string/razdelek_termin" />
+
+            <TextView
+                style="@style/PodnaslovRazdelka"
+                android:text="@string/razdelek_termin_opis" />
+
+            <LinearLayout
+                android:id="@+id/izbira_datum"
+                style="@style/VrsticaIzbire">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_koledar" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Oznaka"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/oznaka_datum" />
+
+                    <TextView
+                        android:id="@+id/prikaz_datum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/izberite_datum"
+                        android:textColor="@color/besedilo_sivo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_puscica" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/izbira_ura"
+                style="@style/VrsticaIzbire">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_ura" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Oznaka"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/oznaka_ura" />
+
+                    <TextView
+                        android:id="@+id/prikaz_ura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/izberite_uro"
+                        android:textColor="@color/besedilo_sivo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_puscica" />
+            </LinearLayout>
+
+            <!-- Razdelek: način kontakta -->
+            <TextView
+                style="@style/NaslovRazdelka"
+                android:layout_marginTop="28dp"
+                android:text="@string/razdelek_kontakt_nacin" />
+
+            <TextView
+                style="@style/PodnaslovRazdelka"
+                android:text="@string/razdelek_kontakt_nacin_opis" />
+
+            <RadioGroup
+                android:id="@+id/skupina_kontakt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_polje"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/radio_eposta"
+                    style="@style/IzbirniGumb"
+                    android:text="@string/kontakt_eposta" />
+
+                <RadioButton
+                    android:id="@+id/radio_klic"
+                    style="@style/IzbirniGumb"
+                    android:text="@string/kontakt_klic" />
+
+                <RadioButton
+                    android:id="@+id/radio_sms"
+                    style="@style/IzbirniGumb"
+                    android:text="@string/kontakt_sms" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/gumb_potrdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/blue"
+                android:minHeight="56dp"
+                android:text="@string/gumb_potrdi"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Opomba o demonstracijski aplikaciji -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_opomba"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opomba"
+                    android:textColor="@color/navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/opomba_opis"
+                    android:textColor="@color/besedilo_sivo"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

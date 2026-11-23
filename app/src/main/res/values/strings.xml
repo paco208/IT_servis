@@ -15,4 +15,64 @@
     <string name="opis_slike_tiskalnik">Tiskalnik – odpri obrazec za rezervacijo</string>
     <string name="kako_poteka">Kako poteka rezervacija?</string>
     <string name="kako_poteka_opis">Izberite napravo, izpolnite obrazec in potrdite zahtevek.</string>
+
+    <!-- RezervacijaActivity: obrazec -->
+    <string name="naslov_rezervacija">Rezervacija • %1$s</string>
+    <string name="razdelek_kontakt">Kontaktni podatki</string>
+    <string name="razdelek_kontakt_opis">Vnesite podatke za rezervacijo termina.</string>
+    <string name="oznaka_ime">Ime in priimek</string>
+    <string name="oznaka_eposta">E-poštni naslov</string>
+    <string name="oznaka_telefon">Telefon</string>
+    <string name="oznaka_poseg">Vrsta posega</string>
+    <string name="oznaka_opis">Opis težave</string>
+    <string name="hint_ime">npr. Ana Novak</string>
+    <string name="hint_eposta">npr. ana.novak@example.si</string>
+    <string name="hint_telefon">npr. 031 555 123</string>
+    <string name="hint_opis">Na kratko opišite, kaj se dogaja z napravo.</string>
+
+    <string-array name="vrste_posega">
+        <item>Diagnostika</item>
+        <item>Popravilo</item>
+        <item>Nadgradnja</item>
+        <item>Drugo</item>
+    </string-array>
+
+    <string name="razdelek_termin">Termin obiska</string>
+    <string name="razdelek_termin_opis">Izberite datum in uro.</string>
+    <string name="oznaka_datum">Datum</string>
+    <string name="oznaka_ura">Ura</string>
+    <string name="izberite_datum">Izberite datum</string>
+    <string name="izberite_uro">Izberite uro</string>
+    <string name="format_datum">%1$02d. %2$02d. %3$d</string>
+    <string name="format_ura">%1$02d:%2$02d</string>
+
+    <string name="razdelek_kontakt_nacin">Način kontakta</string>
+    <string name="razdelek_kontakt_nacin_opis">Kako vas obvestimo o potrditvi termina?</string>
+    <string name="kontakt_eposta">E-pošta</string>
+    <string name="kontakt_klic">Telefonski klic</string>
+    <string name="kontakt_sms">SMS</string>
+    <string name="toast_kontakt">Izbrani način kontakta: %1$s</string>
+
+    <string name="gumb_potrdi">Potrdi rezervacijo</string>
+    <string name="opomba">Opomba</string>
+    <string name="opomba_opis">Rezervacija je demonstracijska, podatki se ne pošiljajo nikamor.</string>
+
+    <!-- Preverjanje vnosa -->
+    <string name="napaka_ime">Vnesite ime in priimek.</string>
+    <string name="napaka_eposta">Vnesite veljaven e-poštni naslov.</string>
+    <string name="napaka_telefon">Vnesite veljavno telefonsko številko.</string>
+    <string name="napaka_opis">Opišite težavo.</string>
+    <string name="napaka_obrazec">Izpolnite označena polja.</string>
+    <string name="napaka_datum">Izberite datum obiska.</string>
+    <string name="napaka_ura">Izberite uro obiska.</string>
+    <string name="napaka_datum_preteklost">Datum ne sme biti v preteklosti.</string>
+    <string name="napaka_ura_preteklost">Izbrana ura je že mimo. Izberite poznejši termin.</string>
+    <string name="napaka_kontakt">Izberite način kontakta.</string>
+
+    <!-- Potrditveno okno -->
+    <string name="dialog_naslov">Potrditev zahtevka</string>
+    <string name="dialog_povzetek">%1$s • %2$s\n%3$s\n%4$s ob %5$s\nNačin kontakta: %6$s\n\nŽelite potrditi rezervacijo?</string>
+    <string name="dialog_potrdi">Potrdi</string>
+    <string name="dialog_preklici">Prekliči</string>
+    <string name="toast_uspeh">Rezervacija je bila uspešno oddana (demonstracija).</string>
 </resources>
